@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+    <button onclick="window.location.href='index.html'" style="margin:20px auto 20px auto; display:block;">Voltar</button>
+    <p>Meowth é um Pokémon do tipo Normal, conhecido por sua habilidade de se comunicar com humanos. Ele é um dos Pokémon mais populares da franquia.</p>
+    <p>Evoluções!</p>
+    <div class="container" id="contMeowth">
+        <div class="card" id="cardMeowth">
+            <p> Evolução-1</p>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png" alt="Meowth"/>
+            <br><button id="btnDetalhes" style="margin-top:10px;"> Ver detalhes </button>
+        </div>
+        <div class="card" id="cardMeowth2">
+            <p> Evolução2</p>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png" alt="Persian"/>
+            <br><button id="btnDetalhes2" style="margin-top:10px;"> Ver detalhes </button>
+        </div>
+    </div>
+    <div id="detalhesmeowth" style="display:none; background:#f4f4f4; border-radius:10px; padding:20px; margin:20px auto; max-width:400px; box-shadow:0 2px 8px #0002;">
+      <h2>Detalhes do meowth</h2>
+      <p>Meowth é um Pokémon pequeno e fofo, conhecido por sua natureza curiosa e por comer qualquer coisa!</p>
+      <ul>
+        <li>Tipo: Normal</li>
+        <li>Altura: 0,6m</li>
+        <li>Peso: 105kg</li>
+      </ul>
+      <button id="btnVoltar" style="margin-top:15px;">Voltar</button>
+    </div>
+    <script>
+      document.getElementById('btnDetalhes').onclick = function() {
+        document.getElementById('detalhesmeowth').style.display = 'block';
+        window.scrollTo({top: document.getElementById('detalhesmeowth').offsetTop, behavior: 'smooth'});
+      };
+      document.getElementById('btnVoltar').onclick = function() {
+        document.getElementById('detalhesmeowth').style.display = 'none';
+      };
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+     <button onclick="window.location.href='index.html'" style="margin:20px auto 20px auto; display:block;">Voltar</button>
+  <p>Evoluções!</p>
+    <div class="container" id="contPika">
+        <div class="card" id="cardPika">
+            <p>Pré-evolução</p>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png" alt="Pichu" />
+            <br><button id="btnDetalhes2" style="margin-top:10px;">Ver detalhes</button>
+        </div>
+        <div class="card" id="cardPika">
+            <p>Evolução-1</p>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pikachu" />
+            <br><button id="btnDetalhes" style="margin-top:10px;">Ver detalhes</button>
+        </div>
+        <div class="card" id="cardPika">
+            <p>Evolução-2</p>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png" alt="Raichu" />
+            <br><button id="btnDetalhes3" style="margin-top:10px;">Ver detalhes</button>
+        </div>
+    </div>
+    <!-- Pikachu Details -->
+        <div id="detalhesPikachu" style="display:none; background:#f4f4f4; border-radius:10px; padding:20px; margin:20px auto; max-width:400px; box-shadow:0 2px 8px #0002;">
+      <h2>Detalhes do Pikachu</h2>
+      <p>Pikachu pesa cerca de 6kg e é conhecido por sua habilidade de gerar eletricidade. Ele é o Pokémon mascote da franquia!</p>
+      <ul>
+        <li>Tipo: Elétrico</li>
+        <li>Altura: 0,4m</li>
+        <li>Peso: 6kg</li>
+      </ul>
+      <button id="btnVoltar" style="margin-top:15px;">Voltar</button>
+    </div>
+    <script>
+      document.getElementById('btnDetalhes').onclick = function() {
+        document.getElementById('detalhesPikachu').style.display = 'block';
+        window.scrollTo({top: document.getElementById('detalhesPikachu').offsetTop, behavior: 'smooth'});
+      };
+      document.getElementById('btnVoltar').onclick = function() {
+        document.getElementById('detalhesPikachu').style.display = 'none';
+      };
+    </script>
+    <p>Pikachu é um Pokémon do tipo Elétrico, famoso por sua cauda em forma de raio e por ser o mascote da franquia Pokémon. Ele é conhecido por sua natureza amigável e por ser um dos Pokémon mais reconhecidos mundialmente.</p>
+    <!-- Pichu Details -->
+    <div id="detalhesPikachu2" style="display:none; background:#f4f4f4; border-radius:10px; padding:20px; margin:20px auto; max-width:400px; box-shadow:0 2px 8px #0002;">
+      <h2>Detalhes do Pichu</h2>
+      <p>Pichu é a pré-evolução do Pikachu. Ele é um Pokémon pequeno e fofo, conhecido por sua natureza tímida e por ser elétrico desde o nascimento!</p>
+      <ul>
+        <li>Tipo: Elétrico</li>
+        <li>Altura: 0,3m</li>
+        <li>Peso: 5kg</li>
+      </ul>
+      <button id="btnVoltar2" style="margin-top:15px;">Voltar</button>
+    </div>
+    <script>
+      document.getElementById('btnDetalhes2').onclick = function() {
+        document.getElementById('detalhesPikachu2').style.display = 'block';
+        window.scrollTo({top: document.getElementById('detalhesPikachu2').offsetTop, behavior: 'smooth'});
+      };
+      document.getElementById('btnVoltar2').onclick = function() {
+        document.getElementById('detalhesPikachu2').style.display = 'none';
+      };
+    </script>
+    <!-- Raichu Details -->
+    <div id="detalhesPikachu3" style="display:none; background:#f4f4f4; border-radius:10px; padding:20px; margin:20px auto; max-width:400px; box-shadow:0 2px 8px #0002;">
+      <h2>Detalhes do Raichu</h2>
+      <p>Raichu é a evolução do Pikachu. Ele é um Pokémon mais forte e ágil, conhecido por sua habilidade de gerar eletricidade em níveis mais altos!</p>
+      <ul>
+        <li>Tipo: Elétrico</li>
+        <li>Altura: 0,8m</li>
+        <li>Peso: 30kg</li>
+      </ul>
+      <button id="btnVoltar3" style="margin-top:15px;">Voltar</button>
+    </div>
+    <script>
+      document.getElementById('btnDetalhes3').onclick = function() {
+        document.getElementById('detalhesPikachu3').style.display = 'block';
+        window.scrollTo({top: document.getElementById('detalhesPikachu3').offsetTop, behavior: 'smooth'});
+      };
+      document.getElementById('btnVoltar3').onclick = function() {
+        document.getElementById('detalhesPikachu3').style.display = 'none';
+      };
+    </script>
+</body>
+</html>

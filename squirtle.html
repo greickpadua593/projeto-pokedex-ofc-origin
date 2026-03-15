@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+  <button onclick="window.location.href='index.html'" style="margin:20px auto 20px auto; display:block;">Voltar</button>
+ <p>Evoluções!</p>
+    <div class="container" id="contSq">
+      <div class="card" id="cardSq">
+        <p>Evolução-1</p>
+        <img
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+          alt=""/>
+            <br><button id="btnDetalhes" style="margin-top:10px;">Ver detalhes</button>
+      </div>
+      <div class="card" id="cardSq">
+        <p>Evolução-2</p>
+        <img
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"
+          alt=""
+        /><br><button id="btnDetalhes2" style="margin-top:10px;">Ver detalhes</button>
+      </div>
+      <div class="card" id="cardSq">
+        <p>Evolução-3</p>
+        <img
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
+          alt=""/><br><button id="btnDetalhes3" style="margin-top:10px;">Ver detalhes</button>
+      </div>
+    </div>
+    <!-- Squirtle Details -->
+    <div id="detalhesSquirtle" style="display:none; background:#f4f4f4; border-radius:10px; padding:20px; margin:20px auto; max-width:400px; box-shadow:0 2px 8px #0002;">
+      <h2>Detalhes do Squirtle</h2>
+      <p>Squirtle pesa cerca de 9kg e é conhecido por sua habilidade de controlar a água. Ele é um dos Pokémon iniciais da região de Kanto!</p>
+      <ul>
+        <li>Tipo: Água</li>
+        <li>Altura: 0,5m</li>
+        <li>Peso: 9kg</li>
+      </ul>
+      <button id="btnVoltar" style="margin-top:15px;">Voltar</button>
+    </div>
+    <script>
+      document.getElementById('btnDetalhes').onclick = function() {
+        document.getElementById('detalhesSquirtle').style.display = 'block';
+        window.scrollTo({top: document.getElementById('detalhesSquirtle').offsetTop, behavior: 'smooth'});
+      };
+      document.getElementById('btnVoltar').onclick = function() {
+        document.getElementById('detalhesSquirtle').style.display = 'none';
+      };
+    </script>
+    <!-- Wartortle Description -->
+    <p>Squirtle é um Pokémon do tipo Água, conhecido por sua habilidade de controlar a água e por sua aparência de tartaruga. Ele é um dos Pokémon iniciais da região de Kanto.</p>
+    <div id="detalhesSquirtle2" style="display:none; background:#f4f4f4; border-radius:10px; padding:20px; margin:20px auto; max-width:400px; box-shadow:0 2px 8px #0002;">
+      <h2>Detalhes do Wartortle</h2>
+      <p>Wartortle é a evolução do Squirtle. Ele possui orelhas e cauda peludas, que ajudam na natação. Wartortle é conhecido por sua resistência e habilidade de nadar longas distâncias.</p>
+      <ul>
+        <li>Tipo: Água</li>
+        <li>Altura: 1,0m</li>
+        <li>Peso: 22,5kg</li>
+      </ul>
+      <button id="btnVoltar2" style="margin-top:15px;">Voltar</button>
+    </div>
+    <script>
+      document.getElementById('btnDetalhes2').onclick = function() {
+        document.getElementById('detalhesSquirtle2').style.display = 'block';
+        window.scrollTo({top: document.getElementById('detalhesSquirtle2').offsetTop, behavior: 'smooth'});
+      };
+      document.getElementById('btnVoltar2').onclick = function() {
+        document.getElementById('detalhesSquirtle2').style.display = 'none';
+      };
+    </script>
+    <!-- Blastoise Details -->
+    <div id="detalhesSquirtle3" style="display:none; background:#f4f4f4; border-radius:10px; padding:20px; margin:20px auto; max-width:400px; box-shadow:0 2px 8px #0002;">
+      <h2>Detalhes do Blastoise</h2>
+      <p>Blastoise é a forma final da linha evolutiva do Squirtle. Ele possui canhões de água em seu casco, capazes de disparar jatos potentes. Blastoise é conhecido por sua força, defesa e ataques aquáticos devastadores.</p>
+      <ul>
+        <li>Tipo: Água</li>
+        <li>Altura: 1,6m</li>
+        <li>Peso: 85,5kg</li>
+      </ul>
+      <button id="btnVoltar3" style="margin-top:15px;">Voltar</button>
+    </div>
+    <script>
+      document.getElementById('btnDetalhes3').onclick = function() {
+        document.getElementById('detalhesSquirtle3').style.display = 'block';
+        window.scrollTo({top: document.getElementById('detalhesSquirtle3').offsetTop, behavior: 'smooth'});
+      };
+      document.getElementById('btnVoltar3').onclick = function() {
+        document.getElementById('detalhesSquirtle3').style.display = 'none';
+      };
+    </script>
+</body>
+</html>

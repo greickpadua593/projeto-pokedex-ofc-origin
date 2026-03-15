@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+    <button onclick="window.location.href='index.html'" style="margin:20px auto 20px auto; display:block;">Voltar</button>
+    <p>Evoluções!</p>
+    <div class="container" id="contGengar">
+        <div class="card" id="cardGengar">
+            <p>Pre-evolução</p>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png" alt="" />
+        </div>
+        <div class="card" id="cardGengar">
+            <p>Evolução-1</p>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png" alt="" />
+            <br><button id="btnDetalhes2" style="margin-top:10px;">Ver detalhes</button>
+        </div>
+        <div class="card" id="cardGengar">
+            <p>Evolução-2</p>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png" alt="" />
+            <br><button id="btnDetalhes" style="margin-top:10px;">Ver detalhes</button>
+        </div>
+    </div>
+    <!-- Haunter Details -->
+    <div id="detalhesGengar2" style="display:none; background:#f4f4f4; border-radius:10px; padding:20px; margin:20px auto; max-width:400px; box-shadow:0 2px 8px #0002;">
+        <h2>Detalhes do Haunter</h2>
+        <p>Haunter é a evolução do Gastly. Ele é conhecido por sua forma gasosa, mãos flutuantes e por assustar pessoas durante a noite. Haunter pode atravessar paredes e é famoso por seu comportamento travesso.</p>
+        <ul>
+            <li>Tipo: Fantasma/Venenoso</li>
+            <li>Altura: 1,6m</li>
+            <li>Peso: 0,1kg</li>
+        </ul>
+        <button id="btnVoltar2" style="margin-top:15px;">Voltar</button>
+    </div>
+    <script>
+        document.getElementById('btnDetalhes2').onclick = function() {
+            document.getElementById('detalhesGengar2').style.display = 'block';
+            window.scrollTo({top: document.getElementById('detalhesGengar2').offsetTop, behavior: 'smooth'});
+        };
+        document.getElementById('btnVoltar2').onclick = function() {
+            document.getElementById('detalhesGengar2').style.display = 'none';
+        };
+    </script>
+    <!-- Gengar Details -->
+    <div id="detalhesGengar" style="display:none; background:#f4f4f4; border-radius:10px; padding:20px; margin:20px auto; max-width:400px; box-shadow:0 2px 8px #0002;">
+        <h2>Detalhes do Gengar</h2>
+        <p>Gengar é um Pokémon do tipo Fantasma/Venenoso, conhecido por sua habilidade de se esconder nas sombras. Ele é a evolução final do Gastly e é famoso por sua natureza travessa.</p>
+        <ul>
+            <li>Tipo: Fantasma/Venenoso</li>
+            <li>Altura: 1,5m</li>
+            <li>Peso: 40,5kg</li>
+        </ul>
+        <button id="btnVoltar" style="margin-top:15px;">Voltar</button>
+    </div>
+    <script>
+        document.getElementById('btnDetalhes').onclick = function() {
+            document.getElementById('detalhesGengar').style.display = 'block';
+            window.scrollTo({top: document.getElementById('detalhesGengar').offsetTop, behavior: 'smooth'});
+        };
+        document.getElementById('btnVoltar').onclick = function() {
+            document.getElementById('detalhesGengar').style.display = 'none';
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <button onclick="window.location.href='index.html'" style="margin:20px auto 20px auto; display:block;">Voltar</button>
+    <p> Evoluções!</p>
+    <br><p>Eevee é um Pokémon do tipo Normal, conhecido por sua habilidade de se adaptar a diferentes ambientes. Ele tem várias evoluções possíveis!</p>
+<div class="container" id="contEvee ">
+    <div class="card" id="cardEvee">
+        <p> Evolução-1</p>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png" alt="" />
+         <br><button id="btnDetalhes" style="margin-top:10px;">Ver detalhes</button>
+    </div>
+
+    <div class="card" id="cardEvee">
+        <p> Evolução-2</p>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png" alt=""/>
+         <br><button id="btnDetalhes2" style="margin-top:10px;">Ver detalhes</button>
+    </div>
+
+    <div class="card" id="cardEvee">
+        <p> Evolução-3</p>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png" alt="" />
+    </div>
+    <div class="card" id="cardEvee">
+        <p> Evolução-4</p>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png" alt="" />
+    </div>
+    <div class="card" id="cardEvee">
+        <p> Evolução-5</p>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png" alt="" />
+    </div>
+    <div class="card" id="cardEvee">
+        <p> Evolução-6</p>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png" alt="" />
+    </div>
+    <div class="card" id="cardEvee">
+        <p> Evolução-7</p>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/700.png" alt="" />
+    </div>
+    <div class="card" id="cardEvee">
+        <p> Evolução-8</p>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/471.png" alt="" />
+</div>
+<div class="card" id="cardEvee">
+        <p> Evolução-9</p>
+        <img src="
+        https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/470.png" alt="" />
+    </div>
+    <!--Eevee detalhes-->
+<div id="detalhesEvee" style="display:none; background:#f4f4f4; border-radius:10px; padding:20px; margin:20px auto; max-width:400px; box-shadow:0 2px 8px #0002;">
+      <h2>Detalhes do Eevee</h2>
+      <p>Eevee pesa cerca de 6,5kg e é conhecido por sua habilidade de se adaptar a diferentes ambientes. Ele tem várias evoluções possíveis!</p>
+      <ul>
+        <li>Tipo: Normal</li>
+        <li>Altura: 0,3m</li>
+        <li>Peso: 6,5kg</li>
+      </ul>
+      <button id="btnVoltar" style="margin-top:15px;">Voltar</button>
+    </div>
+    <script>
+      document.getElementById('btnDetalhes').onclick = function() {
+        document.getElementById('detalhesEvee').style.display = 'block';
+        window.scrollTo({top: document.getElementById('detalhesEvee').offsetTop, behavior: 'smooth'});
+      };
+      document.getElementById('btnVoltar').onclick = function() {
+        document.getElementById('detalhesEvee').style.display = 'none';
+      };
+    </script>
+    <!-- Vaporeon Details -->
+    <div id="detalhesEvee2" style="display:none; background:#f4f4f4; border-radius:10px; padding:20px; margin:20px auto; max-width:400px; box-shadow:0 2px 8px #0002;">
+      <h2>Detalhes do Vaporeon</h2>
+      <p>Vaporeon é uma das evoluções do Eevee. Ele pesa cerca de 29,0kg e possui corpo adaptado para a água, podendo nadar com grande velocidade. Vaporeon pode se dissolver na água e é conhecido por sua cauda semelhante à de uma sereia!</p>
+      <ul>
+        <li>Tipo: Água</li>
+        <li>Altura: 1,0m</li>
+        <li>Peso: 29,0kg</li>
+      </ul>
+      <button id="btnVoltar2" style="margin-top:15px;">Voltar</button>
+    </div>
+    <script>
+      document.getElementById('btnDetalhes2').onclick = function() {
+        document.getElementById('detalhesEvee2').style.display = 'block';
+        window.scrollTo({top: document.getElementById('detalhesEvee2').offsetTop, behavior: 'smooth'});
+      };
+      document.getElementById('btnVoltar2').onclick = function() {
+        document.getElementById('detalhesEvee2').style.display = 'none';
+      };
+    </script>
+</body>
+</html>

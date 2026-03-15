@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+  <button onclick="window.location.href='index.html'" style="margin:20px auto 20px auto; display:block;">Voltar</button>
+    <p>Evoluções!</p>
+    <div class="container" id="contChar">
+      <div class="card" id="cardChar">
+        <p>Evolução-1</p>
+        <img
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+          alt=""/>
+          <br><button id="btnDetalhes" style="margin-top:10px;"> Ver detalhes</button>
+      </div>
+      <div class="card" id="cardChar">
+        <p>Evolução-2</p>
+        <img
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"
+          alt=""/>
+        <br><button id="btnDetalhes2" style="margin-top:10px;"> Ver detalhes</button>
+      </div>
+      <div class="card" id="cardChar">
+        <p>Evolução-3</p>
+        <img
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
+          alt=""/>
+          <br><button id="btnDetalhes3" style="margin-top:10px;"> Ver detalhes</button>
+      </div>
+    </div>
+    <div id="detalhesChar" style="display:none; background:#f4f4f4; border-radius:10px; padding:20px; margin:20px auto; max-width:400px; box-shadow:0 2px 8px #0002;">
+      <h2>Detalhes do Charmander</h2>
+      <p>Charmander pesa cerca de 8,5kg e é conhecido por sua habilidade de controlar o fogo. Ele é um dos Pokémon iniciais da região de Kanto!</p>
+      <ul>
+        <li>Tipo: Fogo</li>
+        <li>Altura: 0,6m</li>
+        <li>Peso: 8,5kg</li>
+      </ul>
+      <button id="btnVoltar" style="margin-top:15px;">Voltar</button>
+    </div>
+    <script>
+      document.getElementById('btnDetalhes').onclick = function() {
+        document.getElementById('detalhesChar').style.display = 'block';
+        window.scrollTo({top: document.getElementById('detalhesChar').offsetTop, behavior: 'smooth'});
+      };
+      document.getElementById('btnVoltar').onclick = function() {
+        document.getElementById('detalhesChar').style.display = 'none';
+      };
+    </script>
+    <p>Charmander é um Pokémon do tipo Fogo, conhecido por sua habilidade de controlar o fogo. Ele é um dos Pokémon iniciais da região de Kanto.</p>
+    <!--Evolucao-2-->
+    <div id="detalhesChar2" style="display:none; background:#f4f4f4; border-radius:10px; padding:20px; margin:20px auto; max-width:400px; box-shadow:0 2px 8px #0002;">
+      <h2>Detalhes da Evolução-2</h2>
+      <p>Charmeleon é a evolução do Charmander. Ele pesa cerca de 19,0kg e sua chama na cauda fica ainda mais intensa. Charmeleon é mais agressivo e habilidoso no controle do fogo, sendo capaz de lançar chamas ainda mais quentes!</p>
+      <ul>
+        <li>Tipo: Fogo</li>
+        <li>Altura: 1,1m</li>
+        <li>Peso: 19,0kg</li>
+      </ul>
+      <button id="btnVoltar2" style="margin-top:15px;">Voltar</button>
+    </div>
+    <script>
+      document.getElementById('btnDetalhes2').onclick = function() {
+        document.getElementById('detalhesChar2').style.display = 'block';
+        window.scrollTo({top: document.getElementById('detalhesChar2').offsetTop, behavior: 'smooth'});
+      };
+      document.getElementById('btnVoltar2').onclick = function() {
+        document.getElementById('detalhesChar2').style.display = 'none';
+      };
+    </script>
+    <!--Evolucao-3-->
+    <div id="detalhesChar3" style="display:none; background:#f4f4f4; border-radius:10px; padding:20px; margin:20px auto; max-width:400px; box-shadow:0 2px 8px #0002;">
+      <h2>Detalhes da Evolução-3</h2>
+      <p>Charizard é a evolução final do Charmander. Ele pesa cerca de 90,5kg e é conhecido por sua habilidade de voar e lançar chamas poderosas. Charizard é um dos Pokémon mais populares e é frequentemente associado a batalhas épicas!</p>
+      <ul>
+        <li>Tipo: Fogo/Voador</li>
+        <li>Altura: 1,7m</li>
+        <li>Peso: 90,5kg</li>
+      </ul>
+      <button id="btnVoltar3" style="margin-top:15px;">Voltar</button>
+    </div>
+    <script>
+      document.getElementById('btnDetalhes3').onclick = function() {
+        document.getElementById('detalhesChar3').style.display = 'block';
+        window.scrollTo({top: document.getElementById('detalhesChar3').offsetTop, behavior: 'smooth'});
+      };
+      document.getElementById('btnVoltar3').onclick = function() {
+        document.getElementById('detalhesChar3').style.display = 'none';
+      };
+    </script>
+</body>
+</html>
